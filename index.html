@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Botão JS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="form">
+      <form>
+        <fieldset>
+          <label>Informe seu peso</label>
+          <input type="text" id="peso" placeholder="Peso" />
+          <span>Ex: 80</span>
+          <label>Informe sua altura</label>
+          <input type="text" id="altura" placeholder="Altura" />
+          <span>Ex: 1.70</span>
+          <br />
+          <button
+            type="button"
+            onclick="calcImc(document.getElementById('peso').value, document.getElementById('altura').value)"
+          >
+            Calcular
+          </button>
+          <button id="button" onclick="toggleDarkMode()">
+            Alternar Tema
+          </button>
+        </fieldset>
+        <div id="resultado"></div>
+      </form>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
